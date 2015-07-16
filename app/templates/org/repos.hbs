@@ -1,8 +1,32 @@
-<h2 id="title">{{org.id}} Org Repos</h2>
-{{outlet}}
-{{log content}}
-<ul>
-{{#each content as |repo|}}
-<li>{{repo.id}}</li>
-{{/each}}
-</ul>
+<div class="row">
+	<div class="col s12 cards-container">
+
+	{{#each content as |repo|}}
+		{{#link-to 'orgs.show.repo' content.org.id repo.id}}
+
+			{{#md-card title=repo.id
+			    titleClass="orange-text"
+			    class="full-width-card"}}
+
+			    {{#md-card-content}}
+			        {{repo.description}}
+			    {{/md-card-content}}
+
+			    {{#md-card-action}}
+			    	<a href={{repo.url}}>Go to Github</a>
+			    	{{#md-badge class='right'}}
+				    	<i class="material-icons">remove_red_eye</i>
+				    	{{repo.watchers_count}}
+			    	{{/md-badge}}
+					{{#md-badge class='right'}}
+						<i class="material-icons">stars</i>
+						{{repo.stargazers_count}}
+					{{/md-badge}}
+			    {{/md-card-action}}
+
+			{{/md-card}}
+		{{/link-to}}
+	{{/each}}
+	</div>
+
+</div>

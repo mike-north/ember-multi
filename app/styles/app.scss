@@ -1,2 +1,63 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+.loader-container {
+	margin-top: 200px;
+	text-align: center;
+}
+
+span.badge {
+	position: relative;
+	right: 0;
+	padding: 2px 7px;
+	border-radius: 2px;
+	.material-icons {
+		position: relative;
+		top: 6px;
+		margin-top: -5px;
+	}
+}
+
+
+.org-name {
+	img {
+		position: relative;
+		top: 16px;
+	}
+}
+
+.full-width-card {
+  width: 100%;
+}
+
+
+@mixin column-count($ct) {
+  -webkit-column-count: $ct;
+  -moz-column-count: $ct;
+  column-count: $ct;
+}
+
+.cards-container {
+  column-break-inside: avoid;
+  .card {
+    display: inline-block;
+    overflow: visible;
+  }
+}
+
+@media #{$small-and-down} {
+  .cards-container {
+    @include column-count(1);
+  }
+}
+@media #{$medium-and-up} {
+  .cards-container {
+    @include column-count(2);
+  }
+}
+@media #{$large-and-up} {
+  .cards-container {
+    @include column-count(3);
+  }
+}
+
