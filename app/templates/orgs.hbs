@@ -1,2 +1,6 @@
 <h2 id="title">Org</h2>
-{{outlet}}
+<ul>
+{{#each content as |org|}}
+	<li>{{link-to org.id 'org' org}}</li>
+{{/each}}
+</ul>

@@ -1,2 +1,8 @@
-<h2 id="title">Org.repos</h2>
+<h2 id="title">{{org.id}} Org Repos</h2>
 {{outlet}}
+{{log content}}
+<ul>
+{{#each content as |repo|}}
+<li>{{repo.id}}</li>
+{{/each}}
+</ul>
