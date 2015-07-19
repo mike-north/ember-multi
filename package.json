@@ -45,9 +45,13 @@
     "ember-new-computed": "1.0.2",
     "ember-radio-button": "1.0.4"
   },
-  "main": "dist/index.html",
   "window": {
+    "title": "Write once, run everywhere",
+    "toolbar": false,
+    "min_width": 601,
+    "min_height": 200,
     "width": 960,
     "height": 600
-  }
+  },
+  "main": "dist/index.html"
 }
