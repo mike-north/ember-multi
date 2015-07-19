@@ -1,7 +1,17 @@
-# Ember-multi
+# ember-multi
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A multi-device Ember.js app, using [nw.js](https://github.com/nwjs/nw.js) and [Apache Cordova](https://github.com/apache/cordova-ios) to generate a web app, a mobile app, and a desktop app from a single codebase. 
+
+In my [presentation at Mobile+Web Devcon](http://www.slideshare.net/mikelnorth/write-once-run-everywhere-50676303), I used several git branches to advance through stages of building this app, step by step.
+
+* step-0: Ember-cli set up
+* step-1: Routes, with some debugging info in templates to prove that URLs work
+* step-2: ember-data models, working adapters and serializers that hit the github API
+* step-3: improve UI by setting up [ember-cli-materialize](https://github.com/truenorth/ember-cli-materialize)
+* step-4: apache cordova works
+* step-5: nw.js works
+* step-6: nw.js app has window constraints, and no address bar
+
 
 ## Prerequisites
 
