@@ -5,7 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'ember-multi',
     environment: environment,
     baseURL: '/',
-    locationType: 'auto',
+    locationType: 'hash',
+    defaultLocationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -17,6 +18,14 @@ module.exports = function(environment) {
       'style-src': "'self' https://fonts.googleapis.com",
       'connect-src': "'self' https://api.github.com",
       'img-src': "'self' https://avatars.githubusercontent.com"
+    },
+    cordova: {
+      rebuildOnChange: false,
+      emulate: false,
+      liveReload: {
+        enabled: true,
+        platform: 'ios'
+      }
     },
     APP: {
       // Here you can pass flags/options to your application instance

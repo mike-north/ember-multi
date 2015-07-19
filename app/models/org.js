@@ -11,7 +11,5 @@ export default DS.Model.extend({
 	created_at: attr('date'),
 	updated_at: attr('date'),
 	public_repos: attr('number'),
-	public_gists: attr('number'),
-	created_at: attr('date'),
-	updated_at: attr('date')
+	public_gists: attr('number')
 });
