@@ -1,5 +1,7 @@
 # ember-multi
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-multi.svg)](https://greenkeeper.io/)
+
 A multi-device Ember.js app, using [nw.js](https://github.com/nwjs/nw.js) and [Apache Cordova](https://github.com/apache/cordova-ios) to generate a web app, a mobile app, and a desktop app from a single codebase. 
 
 In my [presentation at Mobile+Web Devcon](http://www.slideshare.net/mikelnorth/write-once-run-everywhere-50676303), I used several git branches to advance through stages of building this app, step by step.
